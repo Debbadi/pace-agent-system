@@ -1,0 +1,5 @@
+{
+  "ignore": ["generated/*", "generated/**/*"],
+  "watch": ["*.js", "agents/*.js", "jira/*.js"],
+  "ext": "js,json"
+}
