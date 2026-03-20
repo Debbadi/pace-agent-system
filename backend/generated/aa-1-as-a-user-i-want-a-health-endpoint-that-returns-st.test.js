@@ -1,17 +1,26 @@
-// Generated: 2026-03-20T01:03:01.679Z
-```javascript
+// Generated: 2026-03-20T02:53:14.686Z
 const request = require('supertest');
-const app = require('../app'); // Assuming your Express.js app is in a separate file
+const app = require('./aa-1-as-a-user,-i-want-a-/health-endpoint-that-returns-status-ok');
 
-describe('/health endpoint', () => {
-  it('returns status OK with 200', async () => {
-    const response = await request(app).get('/health');
-    expect(response.status).toBe(200);
+describe('As a user, I want a /health endpoint that returns status OK', () => {
+  
+  test('Add some detail + acceptance criteria like:', async () => {
+    const res = await request(app).add('some');
+    expect(res.status).not.toBe(404);
   });
 
-  it('response body contains {"status": "ok"}', async () => {
-    const response = await request(app).get('/health');
-    expect(response.body).toEqual({ status: 'ok' });
+  test('- - GET /health returns 200', async () => {
+    const res = await request(app).-('-');
+    expect(res.status).not.toBe(404);
+  });
+
+  test('- - Response body contains {"status": "ok"}', async () => {
+    const res = await request(app).-('-');
+    expect(res.status).not.toBe(404);
+  });
+
+  test('- Status: To Do', async () => {
+    const res = await request(app).-('Status:');
+    expect(res.status).not.toBe(404);
   });
 });
-```

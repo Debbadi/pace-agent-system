@@ -1,13 +1,12 @@
-// Generated: 2026-03-20T01:03:01.679Z
+// Generated: 2026-03-20T02:53:14.686Z
 ```javascript
 const express = require('express');
-const app = express();
+const router = express.Router();
 
-module.exports = (app) => {
-  app.get('/health', (req, res) => {
-    res.status(200).send({ status: 'ok' });
-  });
-};
+router.get('/health', (req, res) => {
+    res.status(200)
+        .json({ status: 'ok' })
+});
+
+module.exports = router;
 ```
-
-Note that I've added the app parameter to allow for customization of the Express app instance before exporting it.
